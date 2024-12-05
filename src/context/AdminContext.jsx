@@ -7,8 +7,7 @@ export const AdminContext = createContext()
 
 const AdminContextProvider = (props) => {
 
-    const backendUrl = "http://localhost:4000";
-    // const backendUrl = VITE_BACKEND_URL;
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
     console.log('Backend URL:', backendUrl);
 
